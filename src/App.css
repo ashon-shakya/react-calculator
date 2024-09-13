@@ -1,0 +1,154 @@
+.portfolio {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    box-shadow: 0 0 10px grey;
+}
+
+.portfolio-img > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px grey solid;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.detail > .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detail > p {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.calcBtn {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 0px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.calcBtn:hover {
+    background-color: grey;
+}
+
+.evalBtn {
+    background-color: orange;
+}
+
+/* .display {
+    font-size: 20px;
+    background-color: rgb(190, 190, 190);
+
+    height: 50px;
+    width: 400px;
+} */
+
+/* CALC CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: black;
+    min-height: 500px;
+    width: 360px;
+    border-radius: 50px;
+    overflow: hidden;
+
+    .display {
+        /* background-color: grey; */
+        height: auto;
+        min-height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        font-weight: 100;
+        color: white;
+        flex-direction: column;
+        padding-right: 40px;
+
+        .top-display {
+            font-size: 30px;
+            min-height: 30px;
+        }
+        .bottom-display {
+            font-size: 60px;
+            width: auto;
+            min-height: 60px;
+        }
+    }
+
+    .numberpad {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(5, 80px);
+        color: white;
+        align-items: center;
+        justify-items: center;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        gap: 5px;
+
+        div {
+            width: 100%;
+            height: 80px;
+            border-radius: 80px;
+            background-color: rgb(46, 46, 46);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        div.orange {
+            background-color: orange;
+        }
+
+        div.grey {
+            background-color: grey;
+        }
+
+        div.span2 {
+            grid-column: span 2;
+        }
+        div:hover {
+            background-color: rgb(255, 196, 86);
+        }
+    }
+}
